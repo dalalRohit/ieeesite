@@ -11,15 +11,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="sample.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>IEEE</title>
 </head>
 
 <body>
-    <!-- HEADER -->
+    <!-- HEADER Use header.css ONLY -->
     <header>
         <nav>
             <div class="nav-wrapper">
@@ -39,7 +44,8 @@
 
                 <!-- LOGO -->
                 <a href="#" class="brand-logo">
-                    <img title="IEEE VIT Logo" class="responsive-img" alt="IEEE VIT Logo" width="300" height="300" src="logo.png">
+                    <img title="IEEE VIT Logo" id="mylogo" class="responsive-img" alt="IEEE VIT Logo" width="300"
+                        height="300" src="logo.png">
                 </a>
 
                 <!-- HAMBURGER ICON -->
@@ -64,12 +70,12 @@
                             <i class="material-icons right">arrow_drop_down</i>
                         </a>
                     </li>
-                    <li>
-                        <a href="#about">About
+                    <li id="aboutLink">
+                        <a href="#">About
                             <i class="material-icons right">info</i>
                         </a>
                     </li>
-                    <li>
+                    <li id="teamLink">
                         <a href="#"> TEAM
                             <i class="material-icons right">group</i>
                         </a>
@@ -84,11 +90,11 @@
         </nav>
 
         <section class="intro">
-            <h2 class="intro-name">IEEE VIT</h2>
+            <p class="intro-name">IEEE VIT</p>
             <i class="intro-tag">Think Differnet</i>
 
         </section>
-        <div class="down" id="d-arrow">
+        <div class="down animated tada delay-2s" id="d-arrow">
             <i class="fas fa-arrow-down fa-3x"></i>
         </div>
 
@@ -96,7 +102,7 @@
         <ul class="sidenav" id="mobile-demo">
             <!-- MOBILE LOGO -->
             <a href="#" class="brand-logo">
-                <img title="IEEE VIT Logo" class="img-fluid" alt="IEEE VIT Logo" width="250" height="250" src="logo.png">
+                <img title="IEEE VIT Logo" class="responsive-img" alt="IEEE VIT Logo" width="250" height="250" src="logo.png">
             </a>
 
             <li class="divider"></li>
@@ -112,10 +118,10 @@
                 </a>
             </li>
 
-            <li><a href="#about"><i class="material-icons left">info</i> ABOUT</a></li>
+            <li id="dontopen"><a href="#about"><i class="material-icons left">info</i> ABOUT</a></li>
 
-            <li>
-                <a href="#"> TEAM
+            <li id="dontopen">
+                <a href="#team"> TEAM
                     <i class="material-icons left">group</i>
                 </a>
             </li>
@@ -140,26 +146,28 @@
         <div class="main">
             <!-- FIRST ROW -->
             <div class="first" id="about">
-                <h1>ABOUT IEEE</h1>
+                <h1 class="mytitle"> <span class="hash">#</span> ABOUT IEEE</h1>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <img class="img-fluid" src="ieee-logo.jpg" alt="IEEE LOGO">
+                    <div class="col-sm-6" data-aos="flip-up">
+                        <img class="responsive-img" src="ieee-logo.jpg" width="250" height="250" alt="IEEE LOGO" title="IEEE LOGO">
                     </div>
                     <div class="col-sm-6">
                         <b>MISSION</b> <br>
-                        <div class="flow-text">
-                            In this information age, where innovation has become a necessity, IEEE provides a
-                            platform
-                            to
-                            innovate for a better
-                            tomorrow. Comprising of more than 423,000 members in over 160 countries, along with
-                            highly
-                            cited publications,
-                            conferences, and technology standards, as well as professional and educational
-                            activities,
-                            IEEE
-                            inspires to pioneer in
-                            engineering, computing and technology information around the globe.
+                        <div data-aos="fade-left">
+                            <p>
+                                In this information age, where innovation has become a necessity, IEEE provides a
+                                platform
+                                to
+                                innovate for a better
+                                tomorrow. Comprising of more than 423,000 members in over 160 countries, along with
+                                highly
+                                cited publications,
+                                conferences, and technology standards, as well as professional and educational
+                                activities,
+                                IEEE
+                                inspires to pioneer in
+                                engineering, computing and technology information around the globe.
+                            </p>
                         </div>
 
                     </div>
@@ -168,7 +176,7 @@
 
                     <div class="col-sm-6">
                         <b>VISION</b> <br>
-                        <div class="flow-text">
+                        <div data-aos="fade-right">
                             IEEE will be essential to the global technical community and to technical professionals
                             everywhere, and be universally
                             recognized for the contributions of technology and of technical professionals in
@@ -176,8 +184,8 @@
                             global conditions.
                         </div>
                     </div>
-                    <div class="col-sm-6">
-                        <img class="img-fluid" src="vit-img.jpg" alt="">
+                    <div class="col-sm-6" data-aos="flip-up">
+                        <img class="responsive-img" width="400" height="300" src="vit-img.jpg" alt="">
                     </div>
                 </div>
 
@@ -186,8 +194,8 @@
             <!-- SECOND ROW -->
             <div class="first">
                 <div class="row">
-                    <h1>About IEEE VIT Student Branch</h1>
-                    <div class="col-sm-12">
+                    <h1 class="mytitle"> <span class="hash">#</span> About IEEE VIT Student Branch</h1>
+                    <div class="col-sm-12" data-aos="zoom-out-up">
                         IEEE-Vidyalankar Insitute of Technology Student Branch was formed in 2009. We started gaining
                         traction in 2011 and have
                         been consistent in conducting various events since then.
@@ -202,6 +210,11 @@
                 </div>
             </div>
 
+            <!-- THIRD ROW -->
+            <div class="team first" id="team">
+                <h1 class="text-center" class="mytitle"> <span class="hash">#</span> OUR AWESOME TEAM</h1>
+
+            </div>
         </div>
     </main>
 
