@@ -90,8 +90,8 @@
         </nav>
 
         <section class="intro">
-            <p class="intro-name">IEEE VIT</p>
-            <i class="intro-tag">Think Differnet</i>
+            <p data-aos="fade-out-down" class="intro-name">IEEE VIT</p>
+            <i data-aos="fade-out-down" class="intro-tag">Think Differnet</i>
 
         </section>
         <div class="down animated tada delay-2s" id="d-arrow">
@@ -107,7 +107,7 @@
 
             <li class="divider"></li>
 
-            <li><a href="#"> <i class="material-icons left">home</i> HOME </a></li>
+            <li><a id="mylink" href="#"> <i class="material-icons left">home</i> HOME </a></li>
 
             <li class="desktop-dropdown">
                 <a href="#" class="dropdown-trigger" data-target="dropdown2">EVENTS
@@ -118,15 +118,12 @@
                 </a>
             </li>
 
-            <li id="dontopen"><a href="#about"><i class="material-icons left">info</i> ABOUT</a></li>
 
-            <li id="dontopen">
-                <a href="#team"> TEAM
-                    <i class="material-icons left">group</i>
-                </a>
-            </li>
+            <li id="aboutLinkMob"><a id="mylink" href="#"><i class="material-icons left">info</i> ABOUT</a></li>
 
-            <li><a href="#"><i class="fas fa-blog left"></i> BLOG</a></li>
+            <li id="teamLinkMob"><a id="mylink" href="#"> TEAM<i class="material-icons left">group</i></a></li>
+
+            <li><a id="mylink" href="#"><i class="fas fa-blog left"></i> BLOG</a></li>
 
             <li>
                 <div class="mob-social">
@@ -142,7 +139,7 @@
     </header>
 
     <!-- ACTUAL CONTENT -->
-    <main class="container-fluid">
+    <main class="container-fluid text-gray">
         <div class="main">
             <!-- FIRST ROW -->
             <div class="first" id="about">
@@ -172,6 +169,7 @@
 
                     </div>
                 </div>
+
                 <div class="row">
 
                     <div class="col-sm-6">
@@ -210,11 +208,14 @@
                 </div>
             </div>
 
-            <!-- THIRD ROW -->
-            <div class="team first" id="team">
-                <h1 class="text-center" class="mytitle"> <span class="hash">#</span> OUR AWESOME TEAM</h1>
 
-            </div>
+        </div>
+        <!-- THIRD ROW -->
+        <div class="team" id="team">
+
+            <h1 class="text-center" class="mytitle"> <span class="hash">#</span> OUR AWESOME TEAM</h1>
+
+
         </div>
     </main>
 

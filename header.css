@@ -74,6 +74,12 @@ nav ul li a:hover{
     cursor: pointer;
     opacity: 0.3;
 }
+@media(max-width:699px)
+{
+    .down{
+        top: 85vh;
+    }
+}
 .down:hover{
     opacity: 1;
 }

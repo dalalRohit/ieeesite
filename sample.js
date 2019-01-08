@@ -8,19 +8,36 @@ $(document).ready(function () {
         draggable: true,
         inDuration: 250,
         outDuration: 250
-    }).on('click tap', 'li a', () => {
-        $('.sidenav').sidenav('close');
-    });;
+    })
+        .on('click tap', "#mylink", () => {
+            $('.sidenav').sidenav('close');
+        });
+
     $(".dropdown-trigger").dropdown();
 
 
     // FOR aboutLink and teamLink click to scroll part
     $('#aboutLink').on('click', function () {
+        // alert('clicked')
         $('html, body').animate({
             scrollTop: $("#about").offset().top - 64
         }, 1500);
     })
+    $('#aboutLinkMob').on('click', function () {
+        // alert('clicked')
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top - 64
+        }, 1500);
+    })
+    $('#teamLinkMob').on('click', function () {
+        // alert('clicked')
+        $('html, body').animate({
+            scrollTop: $("#team").offset().top - 64
+        }, 1500);
+    })
     $('#teamLink').on('click', function () {
+        // alert('clicked')
+
         $('html, body').animate({
             scrollTop: $("#team").offset().top - 64
         }, 1500);
