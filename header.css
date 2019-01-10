@@ -9,6 +9,8 @@ header{
     background-size: cover;
     background-position: center;
     width: 100%;
+    background-position-x: center;
+    background-position-y: center;
     
 
 }
