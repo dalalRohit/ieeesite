@@ -21,6 +21,8 @@ box-sizing: border-box;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+
 }
 main{
     padding: 30px;
@@ -36,6 +38,7 @@ main{
 
 .main{
     width: 80%;
+    max-width: 100%;
     margin: 0 10% 0 10%;
     color: black;
     height: inherit;
