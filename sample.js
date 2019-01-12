@@ -1,14 +1,10 @@
 $(document).ready(function () {
 
-    //AOS
+    //AOS-animate on scroll
     AOS.init();
 
     // MATERIALIZE INITIALIZATION
-    $('.sidenav').sidenav({
-        draggable: true,
-        inDuration: 250,
-        outDuration: 250
-    })
+    $('.sidenav').sidenav()
         .on('click tap', "#mylink", () => {
             $('.sidenav').sidenav('close');
         });
@@ -69,3 +65,15 @@ $(document).ready(function () {
         }, 1000);
     })
 });
+
+function toggleDd() {
+    // alert();
+    $('.dropdown-trigger').removeClass('closed').addClass('opened').dropdown('open');
+
+    if ($('.dropdown-trigger').has('opened')) {
+        $('.dropdown-trigger').removeClass('opened').addClass('closed');
+        $('.dropdown-trigger').dropdown('close');
+    }
+
+
+}

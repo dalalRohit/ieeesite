@@ -1,19 +1,24 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 /* -------------------HEADER----------------------------- */
 header{
     height: 100vh;
+    min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url('https://ieee.vit.edu.in/assets/images/ai-1-2000x1317.jpg');
+    /* Center and scale the image nicely */
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    width: 100%;
-    background-position-x: center;
-    background-position-y: center;
     
 
 }
+
 .side-nav{
     z-index: 1000;
 }
@@ -75,6 +80,10 @@ nav ul li a:hover{
     top: 89vh;
     cursor: pointer;
     opacity: 0.3;
+}
+
+.up{
+    position: fixed;
 }
 @media(max-width:699px)
 {
