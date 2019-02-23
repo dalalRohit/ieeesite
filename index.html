@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -25,17 +25,17 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- CUSTOM -->
-    <link rel="stylesheet" href="sample.css">
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/sample.css">
 
-    <link rel="shortcut icon" href="ieee-logo.jpg" />
+    <link rel="shortcut icon" href="./imgs/ieee-logo.jpg" />
 
     <title>Home-IEEE VIT</title>
 </head>
 
 <body>
     <!-- HEADER Use header.css ONLY -->
-    <header>
+    <header id="particles-js">
         <nav>
             <div class="nav-wrapper">
                 <!-- DROPDOWN1 -->
@@ -55,7 +55,7 @@
                 <!-- LOGO -->
                 <a href="#" class="brand-logo">
                     <img title="IEEE VIT Logo" id="mylogo" class="responsive-img" alt="IEEE VIT Logo" width="300"
-                        height="300" src="logo.png">
+                        height="300" src="./imgs/logo.png">
                 </a>
 
                 <!-- HAMBURGER ICON -->
@@ -98,21 +98,25 @@
                 </ul>
             </div>
         </nav>
+        <div class="check">
+            <section class="intro">
+                <h2 data-aos="fade-out-down" class="intro-name">IEEE VIT</h2>
+                <i data-aos="fade-out-down" class="intro-tag">Think Differnet</i>
+            </section>
+            <div class="down animated tada delay-2s" id="d-arrow">
+                <i class="fas fa-arrow-down fa-3x"></i>
+            </div>
 
-        <section class="intro">
-            <p data-aos="fade-out-down" class="intro-name">IEEE VIT</p>
-            <i data-aos="fade-out-down" class="intro-tag">Think Differnet</i>
-
-        </section>
-        <div class="down animated tada delay-2s" id="d-arrow">
-            <i class="fas fa-arrow-down fa-3x"></i>
         </div>
+
+
 
         <!-- MOBILE NAV -->
         <ul class="sidenav" id="mobile-demo">
             <!-- MOBILE LOGO -->
             <a href="#" class="brand-logo">
-                <img title="IEEE VIT Logo" class="responsive-img" alt="IEEE VIT Logo" width="250" height="250" src="logo.png">
+                <img title="IEEE VIT Logo" class="responsive-img" alt="IEEE VIT Logo" width="250" height="250"
+                    src="./imgs/logo.png">
             </a>
 
             <li class="divider"></li>
@@ -161,7 +165,8 @@
                 <h1 class="mytitle"> <span class="hash">#</span> ABOUT IEEE</h1>
                 <div class="row">
                     <div class="col-sm-6" data-aos="flip-up">
-                        <img class="responsive-img " src="ieee-logo.jpg" width="250" height="250" alt="IEEE LOGO" title="IEEE LOGO">
+                        <img class="responsive-img " src="./imgs/ieee-logo.jpg" width="250" height="250" alt="IEEE LOGO"
+                            title="IEEE LOGO">
                     </div>
                     <div class="col-sm-6">
                         <b>MISSION</b> <br>
@@ -198,7 +203,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6" data-aos="flip-up">
-                        <img class="responsive-img" width="400" height="300" src="vit-img.jpg" alt="">
+                        <img class="responsive-img" width="400" height="300" src="./imgs/vit-img.jpg" alt="">
                     </div>
                 </div>
 
@@ -226,9 +231,11 @@
 
         </div>
         <!-- THIRD ROW -->
-        <div class="team" id="team">
+        <div class="team container-fluid" id="team">
 
             <h1 class="text-center" class="mytitle"> <span class="hash">#</span> OUR AWESOME TEAM</h1>
+
+
 
 
         </div>
@@ -236,7 +243,8 @@
 
 
     <!-- SCRIPTS -->
-    <script src="sample.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

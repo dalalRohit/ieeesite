@@ -4,7 +4,9 @@ $(document).ready(function () {
     AOS.init();
 
     // MATERIALIZE INITIALIZATION
-    $('.sidenav').sidenav()
+    $('.sidenav').sidenav({
+        hover: true
+    })
         .on('click tap', "#mylink", () => {
             $('.sidenav').sidenav('close');
         });
@@ -77,3 +79,7 @@ function toggleDd() {
 
 
 }
+
+particlesJS.load('particles-js', 'config.json', function () {
+    console.log('');
+});
